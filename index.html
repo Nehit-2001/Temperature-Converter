@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tempreture Converter</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+</head>
+<body>
+    <div class="contaier" onsubmit="calculateTemp(); return false">
+        <div class="tempreture-converter">
+            <div class="mobile">
+                <p>9.45 AM</p>
+                <div>
+                    <i class="bx bx-signal-4"></i>
+                    <i class="bx bx-wifi"></i>
+                    <i class="bx bxs-battery"></i>
+                </div>
+            </div>
+
+            <h2 class="title">Tempreture Converter</h2>
+
+            <div class="result">
+                <span class="result-heading">Result (Celsius)</span>
+                <h2 class="celsius-value" id="celsius"></h2>
+            </div>
+
+            <div class="degree-type">
+                <div class="degree-field">
+                    <label for="degree">Degree</label>
+                    <input type="number" name="degree" id="degree">
+                </div>
+
+                <div class="temp-field">
+                    <label for="temp-type">Type</label>
+                    <select name="tempretures" id="temp-type" autocomplete="on">
+                        <option value="fahrenheit" id="fahrenheit">fahrenheit</option>
+                        <option value="kelvin" id="kelvin">Kkelvin</option>
+                    </select>
+                </div>
+            </div>
+
+            <button id="convert-btn">Convert</button>
+        </div>
+    </div>
+
+
+
+    <!-- JavaScript -->
+    <script src="js/app.js"></script>
+</body>
+</html>

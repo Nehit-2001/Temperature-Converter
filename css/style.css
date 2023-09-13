@@ -1,0 +1,128 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgba(28, 165, 219, 0.7);
+    background: linear-gradient(45deg, rgb(28, 165, 219) 0%, rgb(52, 63, 228) 100%);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.tempreture-converter{
+    background: white;
+    width: 100%;
+    min-width: 330px;
+    padding: 20px 25px 45px;
+    border-radius: 6px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: -5px -5px 250px 0 rgba(28, 165, 219, 0.09) inset ;
+}
+
+.mobile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 36px;
+}
+
+.title{
+    color: #222;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.result{
+    text-align: center;
+    margin: 20px 0;
+}
+
+.result-heading{
+    color: #555;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.celsius-value{
+    border-bottom: 1.5px solid #ccc;
+    padding: 10px;
+    transition: all 0.4s ease;
+}
+
+.degree-type{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.degree-field{
+    display: flex;
+    flex-direction: column;
+    width: 46%;
+}
+
+.temp-field{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    color: #555;
+    font-size: .9rem;
+    margin-bottom: 5px;
+}
+
+input, select{
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: 1.8px solid #ccc;
+    padding: 8px;
+    margin-bottom: 15px;
+}
+
+input:focus, select:focus{
+    border: 1px solid rgb(146, 211, 236);
+}
+
+option{
+    background: #ccc;
+    color: #000000;
+}
+
+#convert-btn{
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    margin-bottom: 5px;
+    padding: 12px 80px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    background: linear-gradient(to bottom, rgb(52, 63, 228), rgb(28, 165, 219));
+    transition: all 0.35s ease-in;
+}
+
+#convert-btn:hover{
+    opacity: 0.85;
+}
+
+.fo{
+    margin-left: -12px;
+    margin-right: 8px;
+}
+
+
